@@ -1,0 +1,52 @@
+.OwnProfile {
+    width: 275px;
+}
+.OwnProfile-player-info {
+    padding: 10px;
+    background: #eef;
+    border-radius: 5px;
+}
+.OwnProfile-battletag {
+    font-size: 120%;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.OwnProfile-desc {
+    margin: 10px 0;
+    line-height: 1.4;
+}
+.OwnProfile-desc-input {
+    width: 100%;
+    box-sizing: content-box;
+    color: #666;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-left: -6px;
+    font-family: sans-serif;
+}
+.OwnProfile-playmode-select {
+    font-weight: bold;
+}
+.OwnProfile-list-buttons {
+    margin-top: 10px;
+}
+.OwnProfile-button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: white;
+    background: #1a2661;
+    border: none;
+    cursor: pointer;
+}
+.OwnProfile-button-disabled {
+    color: black;
+    font-weight: bold;
+    background: white;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.OwnProfile-delist-button {
+    background: #d64161;
+}

@@ -1,0 +1,8 @@
+{
+  "root": "build/",
+  "proxies": {
+    "/api": {
+      "origin": "https://stormcloud-mongoose-4373.twil.io"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.PlayerList {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+.PlayerList-title {
+    margin-bottom: 0;
+}
+.PlayerList-description {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #888;
+}
+.PlayerList-players {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.PlayerList-item {
+    display: flex;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

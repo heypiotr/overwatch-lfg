@@ -1,0 +1,37 @@
+{
+  "name": "overwatch-lfg",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "dotenv": "^6.0.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "sanitize.css": "^5.0.0",
+    "twilio": "^3.17.3",
+    "twilio-sync": "^0.8.2",
+    "url-search-params-polyfill": "^4.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": {
+    "/api/bnet-auth": {
+      "target": "https://stormcloud-mongoose-4373.twil.io",
+      "changeOrigin": true,
+      "pathRewrite": { "^/api": "" }
+    },
+    "/api": {
+      "target": "https://stormcloud-mongoose-4373.twil.io",
+      "changeOrigin": true,
+      "pathRewrite": { "^/api": "" }
+    }
+  }
+}

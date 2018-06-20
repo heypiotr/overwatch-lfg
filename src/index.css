@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+}
+
+.Header-bar {
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+}
+.Header-title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #6b5b95;
+}
+.Header-title-abbr {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#root {
+    padding: 20px;
+}
