@@ -58,6 +58,7 @@ class OwnProfile extends React.Component {
           <div className="OwnProfile-desc">
             <textarea
               className="OwnProfile-desc-input"
+              maxlength="80"
               placeholder="(more about you or your group)"
               value={this.state.desc}
               onChange={this.handleDescChange}

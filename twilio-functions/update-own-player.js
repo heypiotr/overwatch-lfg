@@ -25,7 +25,7 @@ function validatedPlayerData(playerData, bnetIdentity) {
   if (playerData.battletag === bnetIdentity.battletag) {
     validatedPlayerData.battletag = playerData.battletag;
   }
-  if (typeof playerData.desc === "string" && playerData.desc.length < 140) {
+  if (typeof playerData.desc === "string" && playerData.desc.length <= 80) {
     validatedPlayerData.desc = playerData.desc;
   }
   if (
