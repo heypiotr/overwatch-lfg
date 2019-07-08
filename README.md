@@ -79,7 +79,7 @@ This app uses the second solution. It's hosted as a simple Heroku app, which ser
 
 ## How to run a local dev environment
 
-Clone the repo, run `npm install` and `HTTPS=true npm start`. That's it! (Make sure the app is running on port 3000, because the Battle.net OAuth is set to redirect to "https://localhost:3000".)
+Clone the repo, run `npm install` and `npm start`. That's it! (Make sure the app is running on port 3000, because the Battle.net OAuth is set to redirect to "http://localhost:3000".)
 
 Note: by default, it'll connect to the "production" Twilio Sync service. If you log in to Battle.net and add yourself to the catalog, you'll actually be adding yourself to the live version too :wink:.
 
