@@ -1,7 +1,7 @@
 const got = require("got");
 
 function getBnetIdentity(accessToken) {
-  return got("https://us.api.battle.net/account/user", {
+  return got("https://us.battle.net/oauth/userinfo", {
     json: true,
     headers: { Authorization: `Bearer ${accessToken}` }
   }).then(res => res.body);

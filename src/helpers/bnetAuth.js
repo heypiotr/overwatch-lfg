@@ -28,7 +28,7 @@ async function getFreshBnetToken(code, redirectUri) {
 }
 
 async function getBnetIdentity(bnetToken) {
-  const res = await fetch("https://us.api.battle.net/account/user", {
+  const res = await fetch("https://us.battle.net/oauth/userinfo", {
     headers: { Authorization: `Bearer ${bnetToken}` }
   });
   if (res.ok) {
