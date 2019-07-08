@@ -129,7 +129,7 @@ You now have your own Sync/Functions set up that you have full access to, and th
 
 The only remaining step is to point your local frontend app to use it:
 
-  - In "package.json", find the "/api" proxy setup, and change its "target" to your own Twilio Runtime domain.
+  - In "src/setupProxy.js", find the "/api" proxy setup, and change its "target" to your own Twilio Runtime domain.
   - You'll find it on: <https://www.twilio.com/console/runtime/overview>
   - Do not change the "/api/bnet-auth" setup, unless you've also set up your own Battle.net OAuth app and configured your own `bnet-auth` Twilio Function.
 
