@@ -65,13 +65,13 @@ We want everyone to be able to read the catalog, but only be able to update thei
 
 This app has no backend of its own, so in theory at least, it could be hosted anywhere as a bunch of static HTML/JS/CSS files.
 
-However … for good security reasons, web browsers won't just allow an "my-website.com" website to access anything that's not "overwatch-lfg.com". And since the backend functions are hosted on Twilio Functions, they're at "something-something.twil.io" address.
+However … for good security reasons, web browsers won't just allow "overwatch-lfg.herokuapp.com" to directly access anything that's not "overwatch-lfg.herokuapp.com". And since the backend functions are hosted on Twilio Functions, they're at "something-something.twil.io" address.
 
 Now, there are ways for "something-something.twil.io" to say, "you know what, I'm actually okay with overwatch-lfg.com to access me." That's known as [Cross-Origin Resource Sharing][cors], and it's a pretty good/important read if you're not yet familiar with it.
 
 [cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
 
-Another relatively common solution is to have the web browser call "my-website.com/backend-endpoint", and set it up so that the "my-website.com" server "forwards" (proxies) the request to "something-something.twil.io/backend-endpoint". This way, the web browser always operates on the "my-website.com". The downside is, you do actually need some simple backend on "my-website.com" that'll do the forwarding/proxying.
+Another relatively common solution is to have the web browser call "overwatch-lfg.herokuapp.com/backend-endpoint", and set it up so that the "overwatch-lfg.herokuapp.com" server "forwards" (proxies) the request to "something-something.twil.io/backend-endpoint". This way, the web browser always operates on the "my-website.com". The downside is, you do actually need some simple backend on "overwatch-lfg.herokuapp.com" that'll do the forwarding/proxying.
 
 This app uses the second solution. It's hosted as a simple Heroku app, which serves both the static frontend files, and is set up to proxy the backend requests to Twilio Functions. Specifically—if you know a bit more about Heroku—it uses the [Heroku Buildpack for create-react-app][hb].
 
